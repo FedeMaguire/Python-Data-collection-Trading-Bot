@@ -8,7 +8,25 @@
 # How it Works
 The trading bot triggers a buy order when a specific condition is met and keeps track of the trade until it needs to be closed based on another condition. It does this by checking for a buy signal generated in a pandas DataFrame corresponding to the Stochastic RSI value K-line equal to or above 0.05, and the previous RSI value K-line was below 0.05. If this condition is met, it places a buy limit order. When an order is placed, the code checks for a sell signal in the same pandas DataFrame corresponding to the RSI value K-line equal to or above 0.9, and the previous RSI value K-line was below 0.9. When this condition is met, the order is closed, and the cycle starts over again.
 
-# Libraries
+# Graphical User Interface
+The GUI is coded using the CustomTkinter library to create an easy-to-use environment with clear sections for CHARTS, TRADES, and SETTINGS. LIGHT and DARK modes are available.**Please note that the SETTINGS section is still a work in progress.**
+- # Libraries
+```
+import customtkinter
+import os
+from PIL import Image
+import pandas as pd
+import plotly.graph_objects as go
+```
+ # 
+![image](https://github.com/FedeMaguire/Python-Trading-Bot/blob/main/screenshots/Screenshot%202023-11-09%20165322.jpg?raw=true)
+
+# Prerequisites
+- Binance API key (stored in "keys.py")
+- Binance API secret (stored in "keys.py")
+
+# ChatBot
+- # Libraries
 ```
 import pandas as pd
 import ta #Tecnical indicators
@@ -17,14 +35,10 @@ from datetime import timedelta # Add and substract timestamps
 import time
 from pytz import timezone
 from keys import api_key, api_secret
-``` 
-
-# Prerequisites
-- Binance API key (stored in "keys.py")
-- Binance API secret (stored in "keys.py")
+```
 # Charts:
+The charts are created using the matplotlib and mplfinance libraries and loaded to the GUI as JPG files every time a new event is scheduled.
 - # Libraries:
-
 ```
 import numpy as np
 import pandas as pd
@@ -32,21 +46,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import mplfinance as mpf
 ```
-The charts are created using the matplotlib and mplfinance libraries and loaded to the GUI as JPG files every time a new event is scheduled.
- # 
-![image](https://github.com/FedeMaguire/Python-Trading-Bot/blob/main/screenshots/Screenshot%202023-11-09%20165322.jpg?raw=true)
 
-# Graphical User Interface
-- # Libraries:
-```
-import customtkinter
-import os
-from PIL import Image
-import pandas as pd
-import plotly.graph_objects as go
-```
-
-The GUI is coded using the CustomTkinter library to create an easy-to-use environment with clear sections for CHARTS, TRADES, and SETTINGS. LIGHT and DARK modes are available.**Please note that the SETTINGS section is still a work in progress.**
 
 # Disclaimer
 This project is for informational purposes only. It is not legal, tax, investment, financial, or other advice. Nothing contained here constitutes a solicitation, recommendation, endorsement, or offer to buy or sell any securities or other financial instruments in any jurisdiction. Use at your own risk.
