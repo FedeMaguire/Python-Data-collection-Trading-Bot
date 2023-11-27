@@ -1,4 +1,5 @@
 # :bar_chart::chart_with_upwards_trend::coin:  Python Trading Bot with Graphical User Interface.
+![image](https://github.com/FedeMaguire/Python-Trading-Bot/blob/main/screenshots/Screenshot%202023-11-27%20151559.jpg?raw=true)
 # Overview
 ## This is a cryptocurrency trading bot written in Python. It utilizes Binance's API for scheduled live data gathering and the TA library for technical indicator calculations.
 ![image](https://github.com/FedeMaguire/Python-Trading-Bot/blob/main/screenshots/Screenshot%202023-11-09%20165227.jpg?raw=true)
