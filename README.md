@@ -7,7 +7,7 @@
 ![image](https://github.com/FedeMaguire/Python-Trading-Bot/blob/main/screenshots/Screenshot%202023-11-09%20165411.jpg?raw=true)
 
 # How it Works
-The trading bot triggers a buy order when a specific condition is met and keeps track of the trade until it needs to be closed based on another condition. It does this by checking for a buy signal generated in a pandas DataFrame corresponding to the Stochastic RSI value K-line equal to or above 0.05, and the previous RSI value K-line was below 0.05. If this condition is met, it places a buy limit order. When an order is placed, the code checks for a sell signal in the same pandas DataFrame corresponding to the RSI value K-line equal to or above 0.9, and the previous RSI value K-line was below 0.9. When this condition is met, the order is closed, and the cycle starts over again.
+Live Data is gathered fom Binance using Binance API and a Pandas Frame is generated with the last 200 candles.The trading bot triggers a buy order when a specific condition is met and keeps track of the trade until it needs to be closed based on another condition. It does this by checking for a buy signal generated in a pandas DataFrame corresponding to the Stochastic RSI value K-line equal to or above 0.05, and the previous RSI value K-line was below 0.05. If this condition is met, it places a buy limit order. When an order is placed, the code checks for a sell signal in the same pandas DataFrame corresponding to the RSI value K-line equal to or above 0.9, and the previous RSI value K-line was below 0.9. When this condition is met, the order is closed, and the cycle starts over again.
 
 # Graphical User Interface
 # 
@@ -28,7 +28,7 @@ import plotly.graph_objects as go
 - Binance API key (stored in "keys.py")
 - Binance API secret (stored in "keys.py")
 
-# ChatBot
+# TradingBot
 - # Libraries
 ```
 import pandas as pd
