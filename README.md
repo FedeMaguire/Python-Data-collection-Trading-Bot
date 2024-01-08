@@ -1,7 +1,7 @@
 # :bar_chart::chart_with_upwards_trend::coin:  Python Trading Bot with Graphical User Interface.
 ![image](https://github.com/FedeMaguire/Python-Trading-Bot/blob/main/screenshots/Screenshot%202023-11-27%20151559.jpg?raw=true)
 # Overview
-## This is a real-time data gathering Trading Bot with GUI. Leveraging Binance's API, Pandas and TA library for technical indicator calculations.
+## This is a real-time data gathering Trading Bot with GUI. Leveraging Binance's API, Pandas and TA library for technical indicators calculations.
 ![image](https://github.com/FedeMaguire/Python-Trading-Bot/blob/main/screenshots/Screenshot%202023-11-09%20165227.jpg?raw=true)
  # 
 ![image](https://github.com/FedeMaguire/Python-Trading-Bot/blob/main/screenshots/Screenshot%202023-11-09%20165411.jpg?raw=true)
